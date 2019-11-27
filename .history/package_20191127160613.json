@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "nodemon --ext js monitoring_binary_logs.js",
+    "start": "NODE_ENV=production node src/index.js"
+  },
+  "dependencies": {
+    "@rodrigogs/mysql-events": "^0.6.0",
+    "mysql": "^2.17.1",
+    "ora": "^4.0.3"
+  }
+}
