@@ -1,4 +1,6 @@
 module.exports = {
+	mongo_debug: true,
+	mongo_uri: process.env.MONGO_URI, //db: apidb
     databases: {
 		apidb: {
 			host: process.env.MYSQL_API_HOST,
@@ -45,4 +47,7 @@ module.exports = {
 			}
 		}
 	},
+	servicesEnpointUrl: process.env.SERVICES_ENDPOINT_URL,
+	servicesPrefixPath: process.env.SERVICES_PATH_PREFIX,
+	servicesApiToken: process.env.SERVICES_API_TOKEN,
 };
